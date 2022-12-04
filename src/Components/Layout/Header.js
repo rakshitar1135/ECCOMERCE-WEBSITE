@@ -8,9 +8,8 @@ const Header = (props) => {
         <span>HOME</span>
         <span>STORE</span>
         <span>ABOUT</span>
-
-        <button className={classes.button}> Cart </button>
-        <span> 0 </span>
+      <button className={classes.button} onClick={props. onShowCart}>CART</button>
+        <span>0</span>
       </header>
       <h1 className={classes.h1}> The Generics </h1>
 
