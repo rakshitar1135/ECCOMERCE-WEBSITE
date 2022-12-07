@@ -1,56 +1,21 @@
 import classes from './Cart.module.css'
 import Modal from '../../UI/Modal';
-    const cartElements = [
-
-        {
-        
-        title: 'Colors',
-        
-        price: 100,
-        
-        imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%201.png',
-        
-        quantity: 2,
-        
-        },
-        
-        {
-        
-        title: 'Black and white Colors',
-        
-        price: 50,
-        
-        imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%202.png',
-        
-        quantity: 3,
-        
-        },
-        
-        {
-        
-        title: 'Yellow and Black Colors',
-        
-        price: 70,
-        
-        imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%203.png',
-        
-        quantity: 1,
-        
-        }
-        
-        ]  
+import React,{useContext} from 'react';
+import CartContext from '../Store/CartContext';
 
 const Cart = (props) => {
-    const CartItems = (
-      <ul className={classes["cart-items"]}>
-        {cartElements.map((item) => (
+  const cartCtx=useContext(CartContext)
+  console.log(cartCtx.items)
+   const CartItems = (
+     <ul className={classes["cart-items"]}>
+        {cartCtx.items?.map((item) => (
           <li>
             {<img className= {classes.img} src={item.imageUrl} alt="Some pic"></img>} {item.title}
-            {item.price} {item.quantity}
-            <button> Remove </button>
+           {item.price} {item.quantity}
+           <button> Remove </button>
           </li>
         ))}
-      </ul>
+     </ul>
     );
    
     return (

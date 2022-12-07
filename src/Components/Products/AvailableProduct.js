@@ -37,7 +37,7 @@ const AvailableProducts = () => {
       imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%204.png",
     },
   ];
-  console.log(productsArr);
+
 
 
   
@@ -45,7 +45,7 @@ const AvailableProducts = () => {
   return (
     <section>
       <ul>{productsArr.map((prod) => {
-    console.log(prod);
+    
     return (
       <Product title={prod.title} price={prod.price} image={prod.imageUrl}/>
     );
