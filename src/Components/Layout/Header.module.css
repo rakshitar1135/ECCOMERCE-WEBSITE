@@ -1,4 +1,4 @@
-header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -30,13 +30,30 @@ header {
   font-size: 45px;
   background-color: grey;
 }
-
-.button {
+.h2 {
+  padding: 2%;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  color:black;
+  text-shadow: #080808;
+  font-size: 45px;
+  background-color:lightblue;
+}
+button {
 
   padding: 0 10%;
   align-items: flex-end;
-  color:aqua;
-  
-  font-style: italic;
-  
+  width: auto;
+  background-color:white;
 }
+.navlink {
+  color: white;
+  padding: 0 10px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+

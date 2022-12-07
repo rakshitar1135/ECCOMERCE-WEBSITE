@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    text-align: center;
+    width: 100%;
+    padding: 40px;
+    position: sticky;
+    
+    bottom: 0%;
+}
+.container img{
+    width: 5%;
+    text-align: center;
+
+}
+.container button{
+    background-color: transparent;
+    color: white;
+    border-color: aqua;
+    
+}
+.h1 {
+    padding: 2%;
+    width: 20%;
+    padding: 5px;
+    text-align: center;
+    color:black;
+    text-shadow: #080808;
+    font-size: 20px;
+    font-style: oblique;
+    background-color: lightblue;
+  }

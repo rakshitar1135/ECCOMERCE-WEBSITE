@@ -47,7 +47,7 @@ const AvailableProducts = () => {
       <ul>{productsArr.map((prod) => {
     console.log(prod);
     return (
-      <Product title={prod.title} price={prod.price} image={prod.imageUrl} />
+      <Product title={prod.title} price={prod.price} image={prod.imageUrl}/>
     );
   })}</ul>
     </section>
