@@ -9,7 +9,7 @@ import Home from './Components/Home/Home';
 import ProductDetail from './Components/Products/ProductDetail';
 import classes from "./Components/Layout/Header.module.css"
 import Footer from './Components/Layout/Footer';
-
+import Contact from './Components/Contact/Contact';
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
   const showCartHandler = () => {
@@ -35,6 +35,9 @@ function App() {
 
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/contact_us">
+            <Contact />
           </Route>
 
 
