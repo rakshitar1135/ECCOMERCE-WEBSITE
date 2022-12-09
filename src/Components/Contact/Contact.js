@@ -13,7 +13,7 @@ const Contact = (props) => {
         }
         console.log(contact)
 
-        const response = await fetch( "https://helical-land-343114-default-rtdb.firebaseio.com/",
+        const response = await fetch("https://react-91323-default-rtdb.firebaseio.com/contact.json",
             {
               method: "POST",
               body: JSON.stringify(contact),
