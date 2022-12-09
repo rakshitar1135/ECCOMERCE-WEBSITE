@@ -1,6 +1,7 @@
 import React, { Fragment,useContext} from "react";
 import classes from "./Product.module.css";
 import CartContext from "../Store/CartContext";
+import { Link } from "react-router-dom";
 const Product = (props) => {
   const cartcntx=useContext(CartContext)
   const addItemToCart=(event)=>{
@@ -12,6 +13,7 @@ const Product = (props) => {
     <Fragment>
     
       <li className={classes.list}>
+      <Link to="/store/p3"> 
         <section>
           <div>
             <h3>{props.title}</h3>
@@ -21,7 +23,9 @@ const Product = (props) => {
                 Add To Cart
             </button>
           </div>
+        
         </section>
+        </Link>
       </li>
     </Fragment>
   )
