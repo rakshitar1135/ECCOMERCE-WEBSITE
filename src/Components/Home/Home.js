@@ -1,30 +1,43 @@
-import React, { Fragment } from "react"
-import classes from './Home.module.css'
+import React, { Fragment } from "react";
+import classes from "./Home.module.css";
 
 const Home = () => {
-    return (
-        <Fragment>
-            <header className={classes.divheader}>
-                <button className={classes.button}> Get Out Lastest Album</button>
+  return (
+    <Fragment>
+      <h2 className={classes.h2}> Tours </h2>
 
-            </header>
-
-            <h2 className={classes.h2}> Tours </h2>
-
-            <section>
-                <div>
-                    <p> JUL16 DETROIT, MIDTE ENERGY MUSIC THEATRE <button className={classes.button1} >BUY TICKETS</button> </p>
-                    <p> JUL19 TORONTO, ON BUDWEISER STAGE <button className={classes.button1}>BUY TICKETS</button></p>
-                    <p>JUL16 DETROIT, MIDTE ENERGY MUSIC THEATRE <button className={classes.button1}>BUY TICKETS</button></p>
-                    <p>JUL 22 TORONTO,ON BUDWEISER STAGE <button className={classes.button1}>BUY TICKETS</button></p>
-                    <p>JUL 22 BRISTOW, VAJIGGY LUBE LIVE <button className={classes.button1}>BUY TICKETS</button></p>
-                    <p>JUL 23 PHOENIX, AZAK-CHIN PAVILION <button className={classes.button1}>BUY TICKETS</button></p>
-                    <p>LAS VEGAS, NVT-MOBILE ARENA <button className={classes.button1}>BUY TICKETS</button></p>
-                </div>
-            </section>
-        </Fragment>
-    )
-
-}
+      <section>
+        <div className={classes.para}>
+          <p>
+            {" "}
+            JUL16 MUMBAI.SUN TOE ALBUM{" "}
+            <button className={classes.button1}>BUY TICKETS</button>{" "}
+          </p>
+          <p>
+            {" "}
+            TAJ ALBUM,MUMBAI{" "}
+            <button className={classes.button1}>BUY TICKETS</button>
+          </p>
+          <p>
+            ROZ ALBUM,PUNE{" "}
+            <button className={classes.button1}>BUY TICKETS</button>
+          </p>
+          <p>
+            MIMMI ALBUM,MUMBAI{" "}
+            <button className={classes.button1}>BUY TICKETS</button>
+          </p>
+          <p>
+            LIGGI ALBUM,MUMBAI{" "}
+            <button className={classes.button1}>BUY TICKETS</button>
+          </p>
+          <p>
+            ROSHNI ALBUM,MUMBAI{" "}
+            <button className={classes.button1}>BUY TICKETS</button>
+          </p>
+        </div>
+      </section>
+    </Fragment>
+  );
+};
 
 export default Home;
