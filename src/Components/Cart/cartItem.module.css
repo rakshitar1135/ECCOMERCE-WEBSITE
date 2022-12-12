@@ -1,0 +1,16 @@
+.button{
+    float: right;
+}
+
+.img{
+    width: 20%;
+}
+
+.title {
+    font-size:large;
+}
+
+.price{
+    padding-left: 50px;
+    
+}

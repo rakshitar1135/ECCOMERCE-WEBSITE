@@ -1,27 +1,32 @@
 .divheader {
-    padding: 0%;
-    background-color: gray;
+  padding: 45px;
+  background-color: gray;
 }
 .img {
-    width: 5%;
-
+  width: 5%;
+  text-align: center;
 }
 
 .button {
-    background-color: transparent;
-    color: white;
-    border-color: aqua;
+  background-color: transparent;
+  color: white;
+  border-color: aqua;
+  text-align: center;
 }
 
 .h2 {
-    text-align: center;
+  text-align: center;
+}
+.para {
+  text-align: center;
 }
 .button1 {
-    display: flex;
-    padding: 15px;
-    background-color:lightblue;
-    border: none;
-    border-radius: 7px;
-    margin: auto;
-    cursor: pointer;
-  }
+  display: flex;
+  padding: 15px;
+  background-color:lightblue;
+  border: none;
+  border-radius: 7px;
+  margin: auto;
+  cursor: pointer;
+  text-align: left;
+}

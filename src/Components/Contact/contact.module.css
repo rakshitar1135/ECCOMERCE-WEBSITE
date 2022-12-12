@@ -1,26 +1,20 @@
-.input {
-    margin: 2rem auto;
-    padding: 1rem;
-    width: 90%;
-    max-width: 40rem;
-  }
-  
-  .input label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  .input input {
-    font: inherit;
-    display: block;
-    width: 100%;
-    border: 1px solid #ccc;
-    padding: 0.15rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .input input:focus {
-    outline: none;
-    border-color: #4f005f;
-  }
+.form {
+  border: 2px solid black;
+
+  height: 7cm;
+  width: 10cm;
+  margin-top: 50px;
+  margin-left: 590px;
+  background-color: antiquewhite;
+}
+.header {
+  text-align: center;
+}
+
+.label {
+  padding: 30px;
+}
+
+.button {
+  margin-left: 150px;
+}

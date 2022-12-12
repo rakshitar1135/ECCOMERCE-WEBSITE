@@ -1,9 +1,11 @@
-import React from "react";
+import React from 'react'
 import Product from "./Product";
 
 
+import classes from './AvailableProducts.module.css'
 
 const AvailableProducts = () => {
+  
   const productsArr = [
     {
       title: "Colors",
@@ -37,19 +39,26 @@ const AvailableProducts = () => {
       imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%204.png",
     },
   ];
-
-
-
-  
+ 
 
   return (
-    <section>
-      <ul>{productsArr.map((prod) => {
-    
-    return (
-      <Product title={prod.title} price={prod.price} image={prod.imageUrl}/>
-    );
-  })}</ul>
+    <section className={classes.wraper}>
+      <ul>
+        {productsArr.map((prod) => {
+          return (
+            <Product
+              
+              key={Math.random()}
+              id={prod.id}
+              title={prod.title}
+              price={prod.price}
+              image={prod.imageUrl}
+              quantity= {1}
+              _id= {prod._id}
+            />
+          );
+        })}
+      </ul>
     </section>
   );
 };
